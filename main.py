@@ -7,15 +7,15 @@ print("PROMPTAI, by Xavier Sánchez 2024")
 prompt = input("Dime la oracion que quieres que recite")
 promptup = prompt.upper()
 numprompt = len(prompt)
-arprompt = list(promptup.replace("LL", "LL","QUE","QE","QUI","QI","GUE","GE")) #Tengo las letras separadas de uno en uno + detecta la "LL".
+arprompt = list(promptup.replace("LL", "LL")) #Tengo las letras separadas de uno en uno + detecta la "LL".
 print("Reproduciendo",prompt)
 for i in arprompt:
-    match arprompt:
+    match i:
         case "A":
-            audio.play_file('A.wav')
+            audio.play_file("A.wav")
         case "B":
-            audio.play_file('B.wav')
-        case "C":
+            audio.play_file("B.wav")
+    """ case "C":
             audio.play_file('C.wav')
         case "D":
             audio.play_file('D.wav')
@@ -63,3 +63,4 @@ for i in arprompt:
             audio.play_file('Ñ.wav')
         case "LL":
             audio.play_file('LL.wav')
+            """
