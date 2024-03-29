@@ -38,6 +38,8 @@ for i in arprompt:
         case "M":
             audio.play_file('M.wav')
         case "N":
+            audio.play_file('N.wav')
+        case "O":
             audio.play_file('O.wav')
         case "P":
             audio.play_file('P.wav')
