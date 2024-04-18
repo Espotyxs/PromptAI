@@ -1,67 +1,65 @@
-
-
 print("PROMPTAI, by Xavier Sánchez 2024")
 prompt = input("Dime la oracion que quieres que recite")
 promptup = prompt.upper()
 numprompt = len(prompt)
 arprompt = list(promptup) #Tengo las letras separadas de uno en uno + detecta la "LL".
 print("Reproduciendo",prompt)
-l = []
+paster = ""
 for i in arprompt:
     match i:
         case "A":
-         l.append("Alpha")   
+         paster = paster + str("Alpha") + " " 
         case "B":
-         l.append("Bravo")
+         paster = paster + str("Bravo") + " "
         case "C":
-         l.append("Charlie")
+         paster = paster + str("Charlie") + " "
         case "D":
-          l.append("Delta")
+          paster = paster + str("Delta") + " "
         case "E":
-          print("Echo")
+          paster = paster + str("Echo") + " "
         case "F":
-          print("Foxtrot")
+          paster = paster + str("Foxtrot") + " "
         case "G":
-          print("Golf")
+          paster = paster + str("Golf") + " "
         case "H":
-          print("Hotel")
+          paster = paster + str("Hotel") + " "
         case "I":
-          print("India")
+          paster = paster + str("India") + " "
         case "J":
-          print("Juliet")  
+          paster = paster + str("Juliet") + " "
         case "K":
-          print("Kilo")
+          paster = paster + str("Kilo") + " "
         case "L":
-          print("Lima")
+          paster = paster + str("Lima") + " "
         case "M":
-          print("Mike")
+          paster = paster + str("Mike") + " "
         case "N":
-          print("November")
+          paster = paster + str("November") + " "
         case "O":
-          print("Oscar")
+          paster = paster + str("Oscar") + " "
         case "P":
-          print("Papa")
+          paster = paster + str("Papa") + " "
         case "Q":
-          print("Quebec")
+          paster = paster + str("Quebec") + " "
         case "R":
-          print("Romeo")
+          paster = paster + str("Romeo") + " "
         case "S":
-          print("Sierra")
+          paster = paster + str("Sierra") + " "
         case "T":
-          print("Tango")
+          paster = paster + str("Tango") + " "
         case "U":
-          print("Uniform")
+          paster = paster + str("Uniform") + " "
         case "V":
-          print("Victor")
+          paster = paster + str("Victor") + " "
         case "W":
-          print("Whiskey")
+          paster = paster + str("Whiskey") + " "
         case "Y":
-          print("Yankee")
+          paster = paster + str("Yankee") + " "
         case "Z":
-          print("Zulu")
+          paster = paster + str("Zulu") + " "
         case "Ñ":
-          print("Ñoño")
+          paster = paster + str("Ñoño") + " "
         case other:
-          print(" ")
+          paster = paster + str(" | ")
 
-print(l)
+paster = paster + str(paster)
