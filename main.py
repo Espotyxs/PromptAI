@@ -3,66 +3,66 @@ import os
 from replit import audio
 
 
+
 print("PROMPTAI, by Xavier Sánchez 2024")
 prompt = input("Dime la oracion que quieres que recite")
 promptup = prompt.upper()
 numprompt = len(prompt)
-arprompt = list(promptup.replace("LL", "LL")) #Tengo las letras separadas de uno en uno + detecta la "LL".
+arprompt = list(promptup.replace("LL", "L L")) #Tengo las letras separadas de uno en uno + detecta la "LL".
 print("Reproduciendo",prompt)
 for i in arprompt:
     match i:
         case "A":
-            audio.play_file("A.wav")
+         print("Alpha")   
         case "B":
-            audio.play_file("B.wav")
-    """ case "C":
-            audio.play_file('C.wav')
+         print("Bravo")
+        case "C":
+         print("Charlie")
         case "D":
-            audio.play_file('D.wav')
+          print("Delta")
         case "E":
-            audio.play_file('E.wav')
+          print("Echo")
         case "F":
-            audio.play_file('F.wav')
+          print("Foxtrot")
         case "G":
-            audio.play_file('G.wav')
+          print("Golf")
         case "H":
-            continue
+          print("Hotel")
         case "I":
-            audio.play_file('I.wav')
+          print("India")
         case "J":
-            audio.play_file('J.wav')
+          print("Juliet")  
         case "K":
-            audio.play_file('C.wav')
+          print("Kilo")
         case "L":
-            audio.play_file('L.wav')
+          print("Lima")
         case "M":
-            audio.play_file('M.wav')
+          print("Mike")
         case "N":
-            audio.play_file('N.wav')
+          print("November")
         case "O":
-            audio.play_file('O.wav')
+          print("Oscar")
         case "P":
-            audio.play_file('P.wav')
+          print("Papa")
         case "Q":
-            audio.play_file('C.wav')
+          print("Quebec")
         case "R":
-            audio.play_file('R.wav')
+          print("Romeo")
         case "S":
-            audio.play_file('S.wav')
+          print("Sierra")
         case "T":
-            audio.play_file('T.wav')
+          print("Tango")
         case "U":
-            audio.play_file('U.wav')
+          print("Uniform")
         case "V":
-            audio.play_file('B.wav')
+          print("Victor")
         case "W":
-            audio.play_file('B.wav')
+          print("Whiskey")
         case "Y":
-            audio.play_file('I.wav')
+          print("Yankee")
         case "Z":
-            audio.play_file('Z.wav')
+          print("Zulu")
         case "Ñ":
-            audio.play_file('Ñ.wav')
-        case "LL":
-            audio.play_file('LL.wav')
-            """
+          print("Ñoño")
+        case other:
+          print(" ")
