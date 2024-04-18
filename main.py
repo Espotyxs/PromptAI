@@ -1,25 +1,22 @@
-import replit
-import os
-from replit import audio
-
 
 
 print("PROMPTAI, by Xavier Sánchez 2024")
 prompt = input("Dime la oracion que quieres que recite")
 promptup = prompt.upper()
 numprompt = len(prompt)
-arprompt = list(promptup.replace("LL", "L L")) #Tengo las letras separadas de uno en uno + detecta la "LL".
+arprompt = list(promptup) #Tengo las letras separadas de uno en uno + detecta la "LL".
 print("Reproduciendo",prompt)
+l = []
 for i in arprompt:
     match i:
         case "A":
-         print("Alpha")   
+         l.append("Alpha")   
         case "B":
-         print("Bravo")
+         l.append("Bravo")
         case "C":
-         print("Charlie")
+         l.append("Charlie")
         case "D":
-          print("Delta")
+          l.append("Delta")
         case "E":
           print("Echo")
         case "F":
@@ -66,3 +63,5 @@ for i in arprompt:
           print("Ñoño")
         case other:
           print(" ")
+
+print(l)
