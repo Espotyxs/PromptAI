@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "repl-nix-promptai"
+version = "0.1.0"
+description = "Just a library to make a group of words to military alphabet."
+authors = [{ name= "Xavier Sanchez", github= "@Espotyxs"}]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+replit = "^3.6.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Homepage = "https://github.com/Espotyxs/promptai"
